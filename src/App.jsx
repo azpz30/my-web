@@ -16,7 +16,7 @@ function App () {
 
   return (
     <Router>
-    <div style = {{height:'212vh', width:'auto', backgroundColor: "#010718"}}>
+    <div style = {{height:'180vh', width:'auto', backgroundColor: "#010718"}}>
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />}/>
