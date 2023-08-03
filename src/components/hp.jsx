@@ -6,6 +6,7 @@ import Sparkles from 'react-sparkle'
 import brainPic from './bigbrain.png'
 import linkedinPic from './lk.svg'
 import flaskpic from './flask.png'
+import dd from './dungeon.png'
 import Grid from '@mui/material/Grid';
 import { Box, Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material';
 
@@ -33,9 +34,9 @@ const projects = [
   },
   {
     id: 4,
-    image: flaskpic,
+    image: dd,
     title: 'Web-Based Game Backend Application - Java',
-    description: 'Built a robust and efficient backend web server for a Microsoft Teams-like application using Python and REST APIs, facilitating seamless communication and collaboration among users.',
+    description: 'Developed a resilient Java backend for an engaging web-based game, implementing software design principles and Agile development methodologies for seamless gameplay experiences.',
     githubLink: 'https://github.com/your_username/project1',
   },
 ];
