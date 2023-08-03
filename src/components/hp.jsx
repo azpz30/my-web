@@ -11,22 +11,22 @@ const projects = [
   {
     id: 1,
     image: dexter,
-    title: 'Project 1',
-    description: 'Description of Project 1svfovubfoubvwoufvbvwowufb',
+    title: 'Kahoot Quiz Game Clone (Front-end) - React Js',
+    description: 'Developed a captivating and interactive Kahoot quiz game clone using React, Redux, and RESTful API integration, offering an engaging learning experience.',
     githubLink: 'https://github.com/your_username/project1',
   },
   {
     id: 2,
     image: dexter,
-    title: 'Project 2',
-    description: 'Description of Project 2',
+    title: 'LinkedIn-Inspired Job Posting Website - Vanilla JS',
+    description: 'Created a dynamic and user-friendly LinkedIn-inspired job posting website using Vanilla JS, HTML, and CSS, empowering job seekers and employers to connect effortlessly.',
     githubLink: 'https://github.com/your_username/project1',
   },
   {
     id: 3,
     image: dexter,
-    title: 'Project 3',
-    description: 'Description of Project 3',
+    title: 'Microsoft Teams Backend Web Server - Python',
+    description: 'Built a robust and efficient backend web server for a Microsoft Teams-like application using Python and REST APIs, facilitating seamless communication and collaboration among users.',
     githubLink: 'https://github.com/your_username/project1',
   },
   // Add more project objects as needed
