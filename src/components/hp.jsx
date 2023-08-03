@@ -31,7 +31,13 @@ const projects = [
     description: 'Built a robust and efficient backend web server for a Microsoft Teams-like application using Python and REST APIs, facilitating seamless communication and collaboration among users.',
     githubLink: 'https://github.com/your_username/project1',
   },
-  // Add more project objects as needed
+  {
+    id: 4,
+    image: flaskpic,
+    title: 'Web-Based Game Backend Application - Java',
+    description: 'Built a robust and efficient backend web server for a Microsoft Teams-like application using Python and REST APIs, facilitating seamless communication and collaboration among users.',
+    githubLink: 'https://github.com/your_username/project1',
+  },
 ];
 
 const HomePage = () => {
