@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/hp';
-import NavBar from './components/NavBar';
 // import FooterBar from './components/FooterBar';
 
 <link
@@ -16,8 +15,7 @@ function App () {
 
   return (
     <Router>
-    <div style = {{height:'180vh', width:'auto', backgroundColor: "#010718"}}>
-      <NavBar />
+    <div style = {{height:'300vh', width:'auto', backgroundColor: "#010718"}}>
       <Routes>
         <Route path="/" element={<HomePage />}/>
       </Routes>

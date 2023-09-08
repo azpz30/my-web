@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poiret+One&display=swap');
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: 'Montserrat', sans-serif; */
   font-family: monospace;
 }
 
@@ -24,28 +26,20 @@ body {
   color: aquamarine;
 }
 
-.footerBar {
-  height: 50px;
-  background-color: #999999;
-}
-
 .second-bio {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; /* White text color for dark background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: none; /* Semi-transparent blue background color */
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
 }
-/* .my-pic {
-  height: 40vmin;
-  border-radius: 50%;
-  margin-bottom: 50px;
-  border: 1vh solid #232d3622;
-} */
 
 .zone {
-  /*padding:30px 50px;*/
-  /*cursor:pointer;*/
   color:#FFF;
   font-size:2em;
-  /* border-radius:4px;
-  border:1px solid #bbb; */
   transition: all 0.3s linear;
 }
 
@@ -58,7 +52,7 @@ body {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive columns */
   grid-gap: 20px;
 }
 
@@ -72,13 +66,96 @@ body {
   margin: 20px;
 }
 
-.card-container {
-  /* Your existing styles */
-  /* ... */
-  transition: transform 0.3s, box-shadow 0.3s;
+@media screen and (max-width: 768px) {
+  .card-container {
+    max-width: 100%; /* Make cards take full width on small screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Center-align individual cards within the container */
+  .card-container {
+    max-width: 100%;
+    margin: 0 auto; /* Center-align the card horizontally */
+    margin-bottom: 20px;
+    text-align: left; /* Reset text alignment for card content */
+  }
 }
 
 .card-container:hover {
-  transform: translateY(-10px); /* Move the card 10px up when hovered */
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Add a box shadow for elevation */
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
 }
+
+.centered-content {
+  display: flex;
+  flex-direction: column; /* Stack children vertically for small screens */
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Optionally, adjust margin or padding for spacing */
+.centered-content button {
+  margin-top: 20px; /* Adjust the margin as needed */
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Apply the following styles only for screens wider than 768px (adjust as needed) */
+  .centered-content {
+    flex-direction: row; /* Revert to horizontal layout on larger screens */
+  }
+
+  .centered-content button {
+    margin-left: 20px;
+    margin-top: 0; /* Reset top margin for larger screens */
+  }
+}
+
+.reload-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Style the color of the icon (the arrow) */
+.reload-button svg {
+  fill: white;
+  transition: fill 0.3s;
+}
+
+/* Add a hover effect to change the color of the icon on hover */
+.reload-button:hover svg {
+  fill: rgb(92, 31, 31);
+}
+
+/* Add this to your CSS */
+.github-button {
+  background-color: #333; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  border: 2px solid #333; /* Add a border */
+  padding: 10px 20px; /* Adjust padding for button size */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underlines */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.github-button:hover {
+  background-color: #441f1f; /* Change to your desired hover background color */
+  color: #fff; /* Change to your desired hover text color */
+}
+
+/* Style the button text color */
+.github-button span {
+  color: #161515; /* Change to your desired text color */
+}
+

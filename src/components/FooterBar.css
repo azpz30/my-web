@@ -1,0 +1,14 @@
+footer {
+    background-color: #333;
+}
+
+.footer-Container {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}

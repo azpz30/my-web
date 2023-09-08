@@ -10,6 +10,12 @@ const NavBar = () => {
     navigate('/')
   }
 
+  const resumeLink = 'https://drive.google.com/file/d/10r5xe4f9w2QSy-LrCVngPaYPsr22gecj/view?usp=sharing'; 
+
+  const handleResumeButtonClick = () => {
+    window.open(resumeLink, '_blank'); // Open the link in a new tab
+  };
+
   return (
     <AppBar position='static' style={{ background: 'transparent', boxShadow: 'none' }}>
       <Toolbar>
@@ -23,8 +29,8 @@ const NavBar = () => {
         </Typography>
         <Stack direction='row' spacing={2}>
           <Button color='inherit' onClick={handleHome}>Home</Button>
-          <Button color='inherit' >Projects</Button>
           <Button color='inherit'>Blog</Button>
+          <Button onClick={handleResumeButtonClick}>View Resume</Button>
         </Stack>
       </Toolbar>
     </AppBar>
