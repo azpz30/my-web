@@ -10,7 +10,7 @@ const NavBar = () => {
     navigate('/')
   }
 
-  const resumeLink = 'https://drive.google.com/file/d/10r5xe4f9w2QSy-LrCVngPaYPsr22gecj/view?usp=sharing'; 
+  const resumeLink = 'https://drive.google.com/file/d/1aWhjUyk4THdAKOO-WdPYUTxAmNWG5Nle/view?usp=sharing'; 
 
   const handleResumeButtonClick = () => {
     window.open(resumeLink, '_blank'); // Open the link in a new tab
