@@ -7,6 +7,19 @@ body {
   font-family: monospace;
 }
 
+.border {
+  height: 350vh;
+  width: auto;
+  background-color: #010718;
+}
+
+@media (max-width: 767px) {
+  .border {
+    height: 1000vh;
+  }
+}
+
+
 .header {
   position: relative;
   display: flex;

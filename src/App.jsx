@@ -15,7 +15,7 @@ function App () {
 
   return (
     <Router>
-    <div style = {{height:'300vh', width:'auto', backgroundColor: "#010718"}}>
+    <div className='border'>
       <Routes>
         <Route path="/" element={<HomePage />}/>
       </Routes>
